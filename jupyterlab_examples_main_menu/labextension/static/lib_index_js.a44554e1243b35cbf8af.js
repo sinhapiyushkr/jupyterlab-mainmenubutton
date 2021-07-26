@@ -30,7 +30,7 @@ const extension = {
     activate: (app, palette, mainMenu) => {
         const { commands } = app;
         // Add a command
-        const command1 = 'Airflow DataPlatform';
+        const command1 = 'AirflowDataPlatform';
         commands.addCommand(command1, {
             label: 'Airflow DataPlatform',
             caption: 'Airflow DataPlatform',
@@ -38,20 +38,20 @@ const extension = {
                 window.open('https://dataplatform-airflow.curefit.co', '_blank');
             },
         });
-        const command2 = 'Airflow Local';
+        const command2 = 'Commuter';
         commands.addCommand(command2, {
-            label: 'Airflow Local',
-            caption: 'Airflow Local',
+            label: 'Commuter',
+            caption: 'Commuter',
             execute: (args) => {
-                window.open('https://lccalhost:8080', '_blank');
+                window.open('https://dataplatform-commuter.curefit.co/view/', '_blank');
             },
         });
-        const command3 = 'MyLab';
+        const command3 = 'CfDatalabDoc';
         commands.addCommand(command3, {
-            label: 'MyLab',
-            caption: 'MyLab',
+            label: 'Cf-Data-Lab-Doc',
+            caption: 'Cf-Data-Lab-Doc',
             execute: (args) => {
-                window.open('https://lccalhost:8080', '_blank');
+                window.open('https://readme-cfdatalab.curefit.co/', '_blank');
             },
         });
         // Add the command to the command palette
@@ -73,7 +73,7 @@ const extension = {
         });
         // Create a menu
         const airflowMenu = new _lumino_widgets__WEBPACK_IMPORTED_MODULE_1__.Menu({ commands });
-        airflowMenu.title.label = 'DataPlatform';
+        airflowMenu.title.label = 'Data Platforms';
         mainMenu.addMenu(airflowMenu, { rank: 80 });
         // Add the command to the menu
         airflowMenu.addItem({ command: command1, args: { origin: 'from the menu' } });
@@ -87,4 +87,4 @@ const extension = {
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.6cdf11f87fd38068d6d1.js.map
+//# sourceMappingURL=lib_index_js.a44554e1243b35cbf8af.js.map

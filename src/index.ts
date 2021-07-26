@@ -24,7 +24,7 @@ const extension: JupyterFrontEndPlugin<void> = {
     const { commands } = app;
 
     // Add a command
-    const command1 = 'Airflow DataPlatform';
+    const command1 = 'AirflowDataPlatform';
     commands.addCommand(command1, {
       label: 'Airflow DataPlatform',
       caption: 'Airflow DataPlatform',
@@ -33,21 +33,21 @@ const extension: JupyterFrontEndPlugin<void> = {
       },
     });
 
-    const command2 = 'Airflow Local';
+    const command2 = 'Commuter';
     commands.addCommand(command2, {
-       label: 'Airflow Local',
-       caption: 'Airflow Local',
+       label: 'Commuter',
+       caption: 'Commuter',
        execute: (args: any) => {
-          window.open('https://lccalhost:8080','_blank')
+          window.open('https://dataplatform-commuter.curefit.co/view/','_blank')
            },
          });
 
-    const command3 = 'MyLab';
+    const command3 = 'CfDatalabDoc';
     commands.addCommand(command3, {
-       label: 'MyLab',
-       caption: 'MyLab',
+       label: 'Cf-Data-Lab-Doc',
+       caption: 'Cf-Data-Lab-Doc',
        execute: (args: any) => {
-       window.open('https://lccalhost:8080','_blank')
+       window.open('https://readme-cfdatalab.curefit.co/','_blank')
                },
       });
 
@@ -72,7 +72,7 @@ const extension: JupyterFrontEndPlugin<void> = {
 
     // Create a menu
     const airflowMenu: Menu = new Menu({ commands });
-    airflowMenu.title.label = 'DataPlatform';
+    airflowMenu.title.label = 'Data Platforms';
     mainMenu.addMenu(airflowMenu, { rank: 80 });
 
 
