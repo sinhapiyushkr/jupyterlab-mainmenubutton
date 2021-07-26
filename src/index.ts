@@ -50,7 +50,22 @@ const extension: JupyterFrontEndPlugin<void> = {
        window.open('https://readme-cfdatalab.curefit.co/','_blank')
                },
       });
-
+    const command4 = 'Metabase';
+        commands.addCommand(command4, {
+        label: 'Metabase',
+        caption: 'Metabase',
+        execute: (args: any) => {
+        window.open('https://metabase.curefit.co/','_blank')
+                   },
+          });
+    const command5 = 'Metastore';
+        commands.addCommand(command5, {
+        label: 'Metastore',
+        caption: 'Metastore',
+        execute: (args: any) => {
+        window.open('https://metastore.curefit.co','_blank')
+                   },
+          });
 
     // Add the command to the command palette
     const category = 'DataPlatform';
@@ -68,7 +83,17 @@ const extension: JupyterFrontEndPlugin<void> = {
                command:command3,
                category,
                args: { origin: 'from the palette' },
-           });
+      });
+    palette.addItem({
+               command:command4,
+               category,
+               args: { origin: 'from the palette' },
+       });
+     palette.addItem({
+                command:command5,
+                category,
+                args: { origin: 'from the palette' },
+        });
 
     // Create a menu
     const airflowMenu: Menu = new Menu({ commands });
@@ -81,6 +106,8 @@ const extension: JupyterFrontEndPlugin<void> = {
     airflowMenu.addItem({ command:command1, args: { origin: 'from the menu' } });
     airflowMenu.addItem({ command:command2, args: { origin: 'from the menu' } });
     airflowMenu.addItem({ command:command3, args: { origin: 'from the menu' } });
+    airflowMenu.addItem({ command:command4, args: { origin: 'from the menu' } });
+    airflowMenu.addItem({ command:command5, args: { origin: 'from the menu' } });
   },
 };
 

@@ -1957,7 +1957,7 @@
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "8ff54e652cb74296435af827d26d4b786a0e51d046aaa0440ba5dc3b3dc1e1c4",
+        "version": "25ce8257002ae7db7b112f0c61032529ec22fac3b599f8698fa8995820abe360",
         "signature": "a7fd74181ad1bbbe3e61395f8d60a8122599ef6eb1813e0a13f9c15c53e51b51",
         "affectsGlobalScope": false
       }

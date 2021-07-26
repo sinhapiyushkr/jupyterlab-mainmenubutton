@@ -54,6 +54,22 @@ const extension = {
                 window.open('https://readme-cfdatalab.curefit.co/', '_blank');
             },
         });
+        const command4 = 'Metabase';
+        commands.addCommand(command4, {
+            label: 'Metabase',
+            caption: 'Metabase',
+            execute: (args) => {
+                window.open('https://metabase.curefit.co/', '_blank');
+            },
+        });
+        const command5 = 'Metastore';
+        commands.addCommand(command5, {
+            label: 'Metastore',
+            caption: 'Metastore',
+            execute: (args) => {
+                window.open('https://metastore.curefit.co', '_blank');
+            },
+        });
         // Add the command to the command palette
         const category = 'DataPlatform';
         palette.addItem({
@@ -71,6 +87,16 @@ const extension = {
             category,
             args: { origin: 'from the palette' },
         });
+        palette.addItem({
+            command: command4,
+            category,
+            args: { origin: 'from the palette' },
+        });
+        palette.addItem({
+            command: command5,
+            category,
+            args: { origin: 'from the palette' },
+        });
         // Create a menu
         const airflowMenu = new _lumino_widgets__WEBPACK_IMPORTED_MODULE_1__.Menu({ commands });
         airflowMenu.title.label = 'Data Platforms';
@@ -79,6 +105,8 @@ const extension = {
         airflowMenu.addItem({ command: command1, args: { origin: 'from the menu' } });
         airflowMenu.addItem({ command: command2, args: { origin: 'from the menu' } });
         airflowMenu.addItem({ command: command3, args: { origin: 'from the menu' } });
+        airflowMenu.addItem({ command: command4, args: { origin: 'from the menu' } });
+        airflowMenu.addItem({ command: command5, args: { origin: 'from the menu' } });
     },
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (extension);
@@ -87,4 +115,4 @@ const extension = {
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.a44554e1243b35cbf8af.js.map
+//# sourceMappingURL=lib_index_js.4f894dd1ff7b6b37bc15.js.map
