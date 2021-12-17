@@ -29,7 +29,7 @@ const extension: JupyterFrontEndPlugin<void> = {
       label: 'Airflow DataPlatform',
       caption: 'Airflow DataPlatform',
       execute: (args: any) => {
-        window.open('https://dataplatform-airflow.curefit.co','_blank')
+        window.open('https://cf-airflow.curefit.co/','_blank')
       },
     });
 

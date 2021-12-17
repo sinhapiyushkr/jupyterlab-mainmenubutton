@@ -35,7 +35,7 @@ const extension = {
             label: 'Airflow DataPlatform',
             caption: 'Airflow DataPlatform',
             execute: (args) => {
-                window.open('https://dataplatform-airflow.curefit.co', '_blank');
+                window.open('https://cf-airflow.curefit.co/', '_blank');
             },
         });
         const command2 = 'Commuter';
@@ -115,4 +115,4 @@ const extension = {
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.4f894dd1ff7b6b37bc15.js.map
+//# sourceMappingURL=lib_index_js.9f7c39fa306939d0204e.js.map
